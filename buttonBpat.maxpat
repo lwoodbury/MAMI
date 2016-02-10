@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 392.0, 383.0, 384.0, 453.0 ],
+		"rect" : [ 340.0, 446.0, 384.0, 453.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.0, 406.0, 211.0, 22.0 ],
+					"style" : "",
+					"text" : "script sendbox button1 presentation 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
@@ -445,7 +458,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1198.0, 256.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -636,9 +649,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 303.0, 575.0, 35.0 ],
+									"patching_rect" : [ 50.0, 302.0, 579.0, 35.0 ],
 									"style" : "",
-									"text" : "script newobject bpatcher buttonModule @args $3 @presentation_position $1 $2 96 119 @presentation 1 @orderfront 1 @varname $3"
+									"text" : "script newobject bpatcher buttonModule @args $3 @varname $3 @patching_position $1 $2, script size $3 101 137, script sendbox $3 presentation 1"
 								}
 
 							}
@@ -986,6 +999,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
