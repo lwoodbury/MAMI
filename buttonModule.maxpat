@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 331.0, 220.0, 765.0, 452.0 ],
+		"rect" : [ 211.0, 128.0, 765.0, 452.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -360,7 +360,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 799.0, 308.0, 590.0, 491.0 ],
+						"rect" : [ 680.0, 337.0, 528.0, 491.0 ],
 						"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -390,29 +390,27 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-26",
+									"id" : "obj-30",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 150.75, 328.0, 30.0, 22.0 ],
-									"presentation_rect" : [ 163.25, 328.0, 0.0, 0.0 ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "int", "int" ],
+									"patching_rect" : [ 150.75, 324.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "abs"
+									"text" : "change"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-27",
+									"id" : "obj-31",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
+									"numinlets" : 2,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 150.75, 297.0, 139.0, 22.0 ],
-									"presentation_rect" : [ 163.25, 297.0, 0.0, 0.0 ],
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 150.75, 293.0, 35.0, 22.0 ],
 									"style" : "",
-									"text" : "zmap 0 1 0 1"
+									"text" : ">= 1"
 								}
 
 							}
@@ -421,11 +419,11 @@
 									"id" : "obj-24",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 331.25, 415.0, 30.0, 22.0 ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "int", "int" ],
+									"patching_rect" : [ 331.25, 395.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "abs"
+									"text" : "change"
 								}
 
 							}
@@ -433,12 +431,12 @@
 								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
+									"numinlets" : 2,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 331.25, 384.0, 139.0, 22.0 ],
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 331.25, 364.0, 35.0, 22.0 ],
 									"style" : "",
-									"text" : "zmap 0 1 0 1"
+									"text" : ">= 1"
 								}
 
 							}
@@ -634,10 +632,10 @@
 									"maxclass" : "bpatcher",
 									"name" : "hiBpat.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 3,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "", "int", "" ],
-									"patching_rect" : [ 331.25, 174.0, 218.0, 171.0 ],
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 331.25, 173.0, 218.0, 171.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 69.25, 93.0, 217.0, 169.0 ],
 									"varname" : "hiBpat",
@@ -2528,7 +2526,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
+									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-11", 0 ]
@@ -2618,24 +2616,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 2 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-21", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2654,16 +2634,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-27", 2 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-21", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 1 ],
+									"destination" : [ "obj-31", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-21", 1 ]
@@ -2690,28 +2661,28 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-27", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-31", 0 ]
 								}
 
 							}
@@ -3887,12 +3858,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-21::obj-45" : [ "umenu[2]", "umenu[9]", 0 ],
-			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-4::obj-19::obj-7::obj-9" : [ "MIDI_out_LED", "MIDI_out_LED", 0 ],
 			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
+			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-4::obj-21::obj-45" : [ "umenu[2]", "umenu[9]", 0 ],
 			"obj-4::obj-19::obj-7::obj-12::obj-2" : [ "pastebang", "pastebang", 0 ],
-			"obj-4::obj-19::obj-7::obj-1" : [ "refresh", "refresh", 0 ],
-			"obj-4::obj-19::obj-7::obj-9" : [ "MIDI_out_LED", "MIDI_out_LED", 0 ]
+			"obj-4::obj-19::obj-7::obj-1" : [ "refresh", "refresh", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
