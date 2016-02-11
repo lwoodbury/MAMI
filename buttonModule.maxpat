@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1090.0, 431.0, 523.0, 459.0 ],
+		"rect" : [ 513.0, 117.0, 539.0, 459.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,13 +39,40 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 274.0, 115.0, 49.0, 22.0 ],
+					"style" : "",
+					"text" : "receive",
+					"varname" : "receiver"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 274.0, 80.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 259.0, 81.0, 30.0, 30.0 ],
+					"patching_rect" : [ 274.0, 38.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -471,7 +498,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1198.0, 256.0, 640.0, 480.0 ],
+						"rect" : [ 111.0, 352.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -499,6 +526,21 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 11.595187,
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 160.0, 376.0, 185.0, 21.0 ],
+									"style" : "",
+									"text" : "script connectreceiver 0 button1 0"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "newobj",
@@ -567,12 +609,12 @@
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 381.0, 266.0, 122.0, 22.0 ],
+									"patching_rect" : [ 338.0, 266.0, 99.0, 22.0 ],
 									"style" : "",
-									"text" : "combine button #0_ i"
+									"text" : "combine button i"
 								}
 
 							}
@@ -664,7 +706,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 302.0, 588.0, 35.0 ],
 									"style" : "",
-									"text" : "script newobject bpatcher buttonBpat @args $3 @varname $3 @patching_position $1 $2, script size $3 101 137, script sendbox $3 presentation 1"
+									"text" : "script newobject bpatcher buttonBpat @args $3 @varname $3 @patching_position $1 $2, script size $3 101 137, script sendbox $3 presentation 1, script connect receiver 0 $3 0"
 								}
 
 							}
@@ -718,7 +760,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 2 ],
+									"destination" : [ "obj-7", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-11", 1 ]
@@ -749,6 +791,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -1005,31 +1056,17 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"args" : [ "button#0_1" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-4",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "buttonBpat.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 33.0, 101.0, 137.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 33.0, 101.0, 137.0 ],
-					"varname" : "button#0_1",
-					"viewvisibility" : 1
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
- ],
-		"lines" : [ 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
@@ -1122,6 +1159,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1130,24 +1176,7 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-4::obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
-			"obj-4::obj-32" : [ "toggle[1]", "toggle", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "buttonBpat.maxpat",
-				"bootpath" : "~/Documents/Max/Patches/orchestraProj/MAMI",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hiBut.maxpat",
-				"bootpath" : "~/Documents/Max/Patches/orchestraProj/MAMI",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 

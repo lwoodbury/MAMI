@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 489.0, 346.0, 533.0, 552.0 ],
+		"rect" : [ 391.0, 131.0, 533.0, 552.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -103,7 +103,6 @@
 			}
 , 			{
 				"box" : 				{
-					"align" : 1,
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
 					"id" : "obj-19",
@@ -118,7 +117,6 @@
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Choose Trigger Threshold",
-					"textjustification" : 1,
 					"texton" : "In",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
@@ -222,7 +220,6 @@
 			}
 , 			{
 				"box" : 				{
-					"align" : 1,
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
 					"id" : "obj-25",
@@ -237,7 +234,6 @@
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Choose Controller Number",
-					"textjustification" : 1,
 					"texton" : "In",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
@@ -298,7 +294,6 @@
 			}
 , 			{
 				"box" : 				{
-					"align" : 1,
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
 					"id" : "obj-17",
@@ -308,14 +303,13 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 123.0, 157.0, 120.0, 22.0 ],
+					"patching_rect" : [ 125.0, 159.0, 120.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 31.0, 120.0, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "View Controller Input",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"textjustification" : 1,
 					"texton" : "View Controller Input",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
@@ -439,7 +433,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 132.5, 186.0, 248.5, 186.0 ],
+					"midpoints" : [ 134.5, 186.0, 248.5, 186.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -521,7 +515,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 329.5, 150.5, 132.5, 150.5 ],
+					"midpoints" : [ 329.5, 150.5, 134.5, 150.5 ],
 					"source" : [ "obj-32", 1 ]
 				}
 
@@ -582,10 +576,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
