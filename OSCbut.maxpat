@@ -909,7 +909,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 58.5, 5.0, 99.0, 20.0 ],
 					"style" : "",
-					"text" : "Serial",
+					"text" : "OSC",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
 

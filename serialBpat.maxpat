@@ -348,7 +348,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 357.0, 180.0, 36.0, 22.0 ],
+					"patching_rect" : [ 467.0, 122.0, 36.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 118.897003, 7.0, 41.0, 22.0 ]
 				}
@@ -365,7 +365,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 291.5, 403.0, 36.0, 22.0 ],
+					"patching_rect" : [ 401.5, 345.0, 36.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 118.897003, 7.0, 41.0, 20.0 ],
 					"rounded" : 5.0,
@@ -384,7 +384,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 291.5, 368.0, 47.0, 22.0 ],
+					"patching_rect" : [ 401.5, 310.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "text $1"
 				}
@@ -395,11 +395,11 @@
 					"id" : "obj-46",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 281.0, 337.0, 29.5, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "int", "int" ],
+					"patching_rect" : [ 391.0, 279.0, 40.0, 22.0 ],
 					"style" : "",
-					"text" : "t i i"
+					"text" : "t b i i"
 				}
 
 			}
@@ -410,7 +410,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.0, 300.0, 73.0, 22.0 ],
+					"patching_rect" : [ 391.0, 242.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "fromsymbol"
 				}
@@ -423,7 +423,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 281.0, 269.0, 79.0, 22.0 ],
+					"patching_rect" : [ 391.0, 211.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "route symbol"
 				}
@@ -436,7 +436,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.0, 213.0, 67.0, 22.0 ],
+					"patching_rect" : [ 391.0, 155.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "symbol \"3\""
 				}
@@ -449,7 +449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 281.0, 240.0, 213.0, 22.0 ],
+					"patching_rect" : [ 391.0, 182.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "dialog How many inputs do you have?"
 				}
@@ -465,7 +465,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 196.0, 24.75, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 58.0, 79.897003, 20.0 ],
+					"presentation_rect" : [ 4.0, 61.0, 79.897003, 20.0 ],
 					"style" : "",
 					"text" : "Choose Port",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
@@ -1049,7 +1049,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 330.75, 43.75, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.897003, 28.0, 60.0, 22.0 ],
+					"presentation_rect" : [ 151.897003, 31.0, 60.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "umenu",
@@ -1079,7 +1079,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 136.0, 97.0, 107.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.397003, 53.0, 110.0, 20.0 ],
+					"presentation_rect" : [ 103.397003, 56.0, 110.0, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Reload Port Menu",
@@ -1114,7 +1114,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 330.75, 19.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 85.897003, 29.0, 67.0, 20.0 ],
+					"presentation_rect" : [ 85.897003, 31.0, 67.0, 20.0 ],
 					"style" : "",
 					"text" : "Baud Rate",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
@@ -1133,7 +1133,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-30",
-					"items" : [ "Bluetooth-Incoming-Port", ",", "Bluetooth-Modem", ",", "usbmodem1451" ],
+					"items" : [ "Bluetooth-Incoming-Port", ",", "Bluetooth-Modem" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1141,7 +1141,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 129.0, 43.75, 185.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 76.0, 207.897003, 22.0 ],
+					"presentation_rect" : [ 4.0, 79.0, 207.897003, 22.0 ],
 					"prototypename" : "Orch_umenu",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1223,7 +1223,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 47.5, 7.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 7.0, 84.897003, 20.0 ],
+					"presentation_rect" : [ 39.0, 7.0, 84.897003, 20.0 ],
 					"style" : "",
 					"text" : "Serial Inputs:",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -1316,7 +1316,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 321.0, 100.0, 53.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 28.0, 53.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 31.0, 53.0, 20.0 ],
 					"style" : "",
 					"text" : "Initialise",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
@@ -1335,7 +1335,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 292.0, 100.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 57.0, 28.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 57.0, 31.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -1377,7 +1377,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 103.5, 324.0, 93.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.897003, 76.0, 93.0, 22.0 ],
+					"presentation_rect" : [ 111.897003, 79.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "print @popup 1",
 					"textcolor" : [ 0.92549, 0.364706, 0.341176, 0.0 ]
@@ -1603,7 +1603,7 @@
 					"destination" : [ "obj-33", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-46", 0 ]
+					"source" : [ "obj-46", 1 ]
 				}
 
 			}
@@ -1612,7 +1612,7 @@
 					"destination" : [ "obj-53", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-46", 1 ]
+					"source" : [ "obj-46", 2 ]
 				}
 
 			}
@@ -1673,8 +1673,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-30" : [ "umenu[3]", "umenu[9]", 0 ],
-			"obj-27" : [ "umenu", "umenu", 0 ]
+			"obj-27" : [ "umenu", "umenu", 0 ],
+			"obj-30" : [ "umenu[3]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
