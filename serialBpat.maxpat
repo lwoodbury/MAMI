@@ -67,7 +67,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -127,9 +127,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 109.5, 208.0, 62.0, 22.0 ],
+									"patching_rect" : [ 109.5, 208.0, 111.0, 22.0 ],
 									"style" : "",
-									"text" : "value test"
+									"text" : "value #0_serRoute"
 								}
 
 							}
@@ -1673,8 +1673,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-27" : [ "umenu", "umenu", 0 ],
-			"obj-30" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-30" : [ "umenu[3]", "umenu[9]", 0 ],
+			"obj-27" : [ "umenu", "umenu", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
