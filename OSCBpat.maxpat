@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 548.0, 247.0, 853.0, 639.0 ],
+		"rect" : [ 271.0, 192.0, 853.0, 639.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -86,7 +86,7 @@
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"patching_rect" : [ 151.0, 0.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 77.0, 126.948502, 22.0 ]
+					"presentation_rect" : [ 44.474251, 76.0, 126.948502, 22.0 ]
 				}
 
 			}
@@ -103,7 +103,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 172.5, 192.0, 163.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 77.0, 126.948502, 20.0 ],
+					"presentation_rect" : [ 44.474251, 76.0, 126.948502, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "8000",
@@ -176,7 +176,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 92.0, 198.0, 81.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 55.0, 117.5, 20.0 ],
+					"presentation_rect" : [ 44.474251, 54.0, 117.5, 20.0 ],
 					"style" : "",
 					"text" : "Receiving on port:",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
@@ -219,7 +219,7 @@
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"patching_rect" : [ 365.0, 62.0, 36.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 31.0, 126.948502, 22.0 ]
+					"presentation_rect" : [ 44.474251, 30.0, 126.948502, 22.0 ]
 				}
 
 			}
@@ -236,7 +236,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 389.0, 249.0, 163.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 31.0, 126.948502, 20.0 ],
+					"presentation_rect" : [ 44.474251, 30.0, 126.948502, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "OSCdevice1",
@@ -335,7 +335,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 308.5, 249.0, 79.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.948502, 9.0, 117.0, 20.0 ],
+					"presentation_rect" : [ 44.474251, 8.0, 117.0, 20.0 ],
 					"style" : "",
 					"text" : "OSC device name:",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]

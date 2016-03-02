@@ -39,6 +39,56 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"handoff" : "",
+					"id" : "obj-54",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 481.0, 338.5, 36.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.5, 87.0, 41.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
+					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
+					"id" : "obj-51",
+					"ignoreclick" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 349.5, 520.0, 36.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 153.0, 88.0, 36.0, 20.0 ],
+					"rounded" : 5.0,
+					"style" : "",
+					"text" : "1",
+					"texton" : "In",
+					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 349.5, 485.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "text $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
 					"id" : "obj-17",
@@ -50,7 +100,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 125.0, 159.0, 120.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.25, 31.0, 153.5, 20.0 ],
+					"presentation_rect" : [ 20.25, 31.0, 153.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "View Controller Input",
@@ -71,7 +121,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 275.0, 266.0, 93.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 30.0, 153.5, 22.0 ],
+					"presentation_rect" : [ 19.0, 30.0, 153.5, 22.0 ],
 					"style" : "",
 					"text" : "print @popup 1",
 					"textcolor" : [ 0.92549, 0.364706, 0.341176, 0.0 ]
@@ -658,7 +708,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 406.5, 449.0, 96.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.25, 118.0, 153.5, 20.0 ],
+					"presentation_rect" : [ 20.25, 116.0, 153.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Reverse Trigger",
@@ -693,7 +743,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2.0, 206.0, 161.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.25, 60.0, 153.5, 20.0 ],
+					"presentation_rect" : [ 20.25, 60.0, 153.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Choose Controller Number",
@@ -726,7 +776,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 183.5, 524.0, 93.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 60.0, 153.5, 22.0 ],
+					"presentation_rect" : [ 19.0, 60.0, 153.5, 22.0 ],
 					"style" : "",
 					"text" : "print @popup 1",
 					"textcolor" : [ 0.92549, 0.364706, 0.341176, 0.0 ]
@@ -859,9 +909,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 310.0, 334.0, 161.0, 21.0 ],
+					"patching_rect" : [ 310.0, 338.5, 161.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.25, 89.0, 153.5, 20.0 ],
+					"presentation_rect" : [ 5.0, 88.0, 146.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Choose Trigger Threshold",
@@ -907,10 +957,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.897003, 4.0, 68.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 58.5, 5.0, 99.0, 20.0 ],
+					"presentation_rect" : [ 47.5, 6.0, 99.0, 20.0 ],
 					"style" : "",
 					"text" : "Serial",
-					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
+					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -1160,6 +1211,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1310,6 +1370,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-54", 0 ]
 				}
 
 			}
