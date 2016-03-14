@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 610.0, 345.0, 332.0, 490.0 ],
+		"rect" : [ 432.0, 150.0, 332.0, 490.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -57,7 +57,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 131.0, 17.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 51.300003, 7.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 51.300003, 8.0, 114.0, 20.0 ],
 					"style" : "",
 					"text" : "Choose Output",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -77,7 +77,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 166.75, 47.0, 38.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.75, 62.0, 110.0, 20.0 ],
+					"presentation_rect" : [ 117.300003, 69.0, 84.0, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "OSC",
@@ -99,7 +99,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 214.25, 47.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.525002, 33.0, 110.0, 20.0 ],
+					"presentation_rect" : [ 66.300003, 39.0, 84.0, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Internal Synth",
@@ -121,7 +121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 94.75, 47.0, 61.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.75, 62.0, 110.0, 20.0 ],
+					"presentation_rect" : [ 15.300003, 69.0, 84.0, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "MIDI",
@@ -164,7 +164,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 10.0, 318.0, 101.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.300003, 0.0, 248.449997, 95.0 ],
+					"presentation_rect" : [ 0.300003, 0.0, 216.0, 102.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}

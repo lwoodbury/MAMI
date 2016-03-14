@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 156.0, 93.0, 705.0, 665.0 ],
+		"rect" : [ 154.0, 261.0, 705.0, 617.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,9 +39,47 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-2",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 282.5, 39.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+					"id" : "obj-1",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 283.0, 12.0, 15.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 292.0, 5.5, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.button[1]",
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "off", "on" ]
+						}
+
+					}
+,
+					"varname" : "live.button"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
-					"hidden" : 1,
 					"id" : "obj-30",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -50,7 +88,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 128.0, 117.0, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 6.5, 34.0, 20.0 ],
+					"presentation_rect" : [ 102.75, 5.5, 34.0, 18.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Back",
@@ -113,7 +151,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 11.75, 183.0, 117.0, 22.0 ],
-									"presentation_rect" : [ 12.75, 183.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "script show backBut"
 								}
@@ -346,7 +383,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-24",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -357,7 +393,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 33.75, 309.0, 538.0, 411.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.25, 3.5, 223.0, 107.0 ],
+					"presentation_rect" : [ 97.25, -1.5, 223.0, 107.0 ],
 					"varname" : "outBpat",
 					"viewvisibility" : 1
 				}
@@ -415,7 +451,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 16.0, 83.0, 112.0, 22.0 ],
-									"presentation_rect" : [ 16.0, 86.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "script hide backBut"
 								}
@@ -582,6 +617,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-17",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -590,9 +626,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.25, 5.5, 252.0, 97.0 ],
+					"patching_rect" : [ 10.25, -0.25, 217.0, 108.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 83.25, 6.5, 260.0, 109.0 ],
+					"presentation_rect" : [ 97.25, 0.5, 260.0, 109.0 ],
 					"varname" : "outputChooserBpat",
 					"viewvisibility" : 1
 				}
@@ -634,6 +670,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -672,9 +717,10 @@
  ],
 		"parameters" : 		{
 			"obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
+			"obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
 			"obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-24::obj-31" : [ "umenu[6]", "umenu[9]", 0 ],
-			"obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
+			"obj-1" : [ "live.button[1]", "live.button", 0 ],
+			"obj-24::obj-31" : [ "umenu[6]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
