@@ -20,10 +20,10 @@ void loop(){
   int but2 = digitalRead(3);
   
   // write values to serial buffer
-  Serial.print("pot ");
+  Serial.print("1 ");
   Serial.println(pot);
-  Serial.print("b1 ");
+  Serial.print("2 ");
   Serial.println(but1);
-  Serial.print("b2 ");
+  Serial.print("3 ");
   Serial.println(but2);
 }
