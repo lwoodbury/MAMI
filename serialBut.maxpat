@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 106.0, 162.0, 690.0, 592.0 ],
+		"rect" : [ 106.0, 162.0, 195.0, 152.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,56 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-54",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 481.0, 338.5, 36.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 150.5, 87.0, 41.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
-					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
-					"id" : "obj-51",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 349.5, 520.0, 36.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 153.0, 88.0, 36.0, 20.0 ],
-					"rounded" : 5.0,
-					"style" : "",
-					"text" : "1",
-					"texton" : "In",
-					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 349.5, 485.0, 47.0, 22.0 ],
-					"style" : "",
-					"text" : "text $1"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
@@ -661,9 +611,9 @@
 					"presentation_rect" : [ 20.25, 116.0, 153.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Reverse Trigger",
+					"text" : "Reverse Range",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"texton" : "Reverse Trigger",
+					"texton" : "Reverse Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
 				}
@@ -806,7 +756,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 275.0, 9.0, 42.0, 22.0 ],
+					"patching_rect" : [ 406.5, -6.0, 42.0, 22.0 ],
 					"style" : "",
 					"text" : "active"
 				}
@@ -827,32 +777,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 310.0, 422.0, 79.0, 22.0 ],
-					"style" : "",
-					"text" : "route symbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.0, 451.0, 73.0, 22.0 ],
-					"style" : "",
-					"text" : "fromsymbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
 					"id" : "obj-19",
@@ -863,39 +787,13 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 310.0, 338.5, 161.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 88.0, 146.5, 20.0 ],
+					"presentation_rect" : [ 19.0, 88.0, 154.75, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Choose Trigger Threshold",
-					"texton" : "In",
+					"text" : "Choose Threshold/s",
+					"texton" : "Choose Threshold/s",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.0, 366.0, 67.0, 22.0 ],
-					"style" : "",
-					"text" : "symbol \"1\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 310.0, 391.0, 184.0, 22.0 ],
-					"style" : "",
-					"text" : "dialog Choose Trigger Threshold"
 				}
 
 			}
@@ -1105,16 +1003,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"midpoints" : [ 24.0, 476.5, 193.0, 476.5 ],
-					"order" : 1,
 					"source" : [ "obj-14", 1 ]
 				}
 
@@ -1135,30 +1025,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 0,
-					"source" : [ "obj-14", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 1,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"order" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -1166,15 +1032,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1210,13 +1069,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -1279,20 +1131,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}

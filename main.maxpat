@@ -383,6 +383,7 @@
 									"patching_rect" : [ 515.0, 143.0, 62.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 324.0, 13.0, 62.0, 62.0 ],
+									"size" : 1023.0,
 									"style" : "",
 									"thickness" : 100.0
 								}
@@ -690,6 +691,7 @@
 									"patching_rect" : [ 437.0, 143.0, 62.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 246.0, 13.0, 62.0, 62.0 ],
+									"size" : 1023.0,
 									"style" : "",
 									"thickness" : 100.0
 								}
@@ -997,6 +999,7 @@
 									"patching_rect" : [ 358.0, 143.0, 62.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 167.0, 13.0, 62.0, 62.0 ],
+									"size" : 1023.0,
 									"style" : "",
 									"thickness" : 100.0
 								}
@@ -1304,6 +1307,7 @@
 									"patching_rect" : [ 280.0, 143.0, 62.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 89.0, 13.0, 62.0, 62.0 ],
+									"size" : 1023.0,
 									"style" : "",
 									"thickness" : 100.0
 								}
@@ -1611,6 +1615,7 @@
 									"patching_rect" : [ 201.0, 142.0, 62.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 12.0, 62.0, 62.0 ],
+									"size" : 1023.0,
 									"style" : "",
 									"thickness" : 100.0
 								}
@@ -2971,8 +2976,8 @@
 			"obj-6::obj-5::obj-9::obj-77::obj-8" : [ "2005_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-142::obj-8" : [ "1969_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-253::obj-8" : [ "1910_notemap", "notemap", 0 ],
-			"obj-6::obj-38::obj-23" : [ "Offset", "Offset", 0 ],
 			"obj-6::obj-38::obj-20" : [ "Freq", "Freq", 0 ],
+			"obj-6::obj-38::obj-23" : [ "Offset", "Offset", 0 ],
 			"obj-6::obj-39::obj-80" : [ "Response", "Response", 0 ],
 			"obj-6::obj-5::obj-9::obj-46::obj-8" : [ "2000_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-127::obj-8" : [ "1964_notemap", "notemap", 0 ],
@@ -3053,8 +3058,8 @@
 			"obj-6::obj-5::obj-9::obj-217::obj-8" : [ "1898_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-379::obj-8" : [ "1952_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-202::obj-8" : [ "1893_notemap", "notemap", 0 ],
-			"obj-6::obj-35::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-6::obj-35::obj-52" : [ "Level", "Level", 0 ],
+			"obj-6::obj-35::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-6::obj-37::obj-53" : [ "Mute[1]", "Mute", 0 ],
 			"obj-6::obj-40::obj-31" : [ "Release", "Release", 0 ],
 			"obj-6::obj-5::obj-9::obj-364::obj-8" : [ "1947_notemap", "notemap", 0 ],
@@ -3096,6 +3101,62 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "deviceModule.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "deviceChooserBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hiBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "buttonFaderModule.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "serialBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thruPoly.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OSCBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MIDIBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "soundGen.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
 				"patcherrelativepath" : ".",
