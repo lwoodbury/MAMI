@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 783.0, 204.0, 1057.0, 665.0 ],
+		"rect" : [ 187.0, 212.0, 690.0, 665.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1239,7 +1239,7 @@
 					"id" : "obj-28",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "buttonModule.maxpat",
+					"name" : "buttonFaderModule.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -2002,10 +2002,10 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-19::obj-30" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-6::obj-45" : [ "umenu[2]", "umenu[9]", 0 ],
-			"obj-24::obj-45" : [ "umenu[4]", "umenu[9]", 0 ],
 			"obj-19::obj-27" : [ "umenu", "umenu", 0 ],
-			"obj-19::obj-30" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-24::obj-45" : [ "umenu[4]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2023,7 +2023,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "buttonModule.maxpat",
+				"name" : "buttonFaderModule.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
