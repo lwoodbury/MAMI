@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 106.0, 162.0, 195.0, 151.0 ],
+		"rect" : [ 94.0, 183.0, 1204.0, 737.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -764,7 +764,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "trigThresh",
+					"comment" : "range",
 					"id" : "obj-27",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -790,8 +790,8 @@
 					"presentation_rect" : [ 19.0, 88.0, 154.75, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Choose Threshold",
-					"texton" : "Choose Threshold",
+					"text" : "Choose Range",
+					"texton" : "Choose Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
 				}
@@ -1183,6 +1183,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
