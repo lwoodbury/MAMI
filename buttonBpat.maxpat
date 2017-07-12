@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 286.0, 365.0, 655.0, 452.0 ],
+		"rect" : [ 487.0, 372.0, 655.0, 452.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,9 +56,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 147.0, 46.0, 137.0, 22.0 ],
+					"patching_rect" : [ 147.0, 46.0, 124.0, 22.0 ],
 					"style" : "",
-					"text" : "Set a controller number!"
+					"text" : "Set a controller input!"
 				}
 
 			}
