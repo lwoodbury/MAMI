@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 94.0, 183.0, 1204.0, 737.0 ],
+		"rect" : [ 94.0, 183.0, 197.0, 152.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -647,8 +647,8 @@
 					"presentation_rect" : [ 20.25, 60.0, 153.5, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Choose Controller Number",
-					"texton" : "In",
+					"text" : "Set Controller Number",
+					"texton" : "Set Controller Number",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
 				}
@@ -790,8 +790,8 @@
 					"presentation_rect" : [ 19.0, 88.0, 154.75, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Choose Range",
-					"texton" : "Choose Range",
+					"text" : "Set Range",
+					"texton" : "Set Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1
 				}
