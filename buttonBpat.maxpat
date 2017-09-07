@@ -38,6 +38,47 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
+					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
+					"id" : "obj-9",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 294.0, 31.5, 27.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 67.800003, 76.5, 27.0, 15.0 ],
+					"rounded" : 5.0,
+					"style" : "",
+					"text" : "In",
+					"texton" : "In",
+					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.490196, 0.498039, 0.517647, 0.0 ],
+					"fontsize" : 8.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 147.0, 78.5, 66.0, 17.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 66.300003, 66.5, 30.0, 35.0 ],
+					"style" : "",
+					"text" : "print @popup 1",
+					"textcolor" : [ 0.92549, 0.364706, 0.341176, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -59,25 +100,6 @@
 					"patching_rect" : [ 147.0, 46.0, 124.0, 22.0 ],
 					"style" : "",
 					"text" : "Set a controller input!"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"color" : [ 0.490196, 0.498039, 0.517647, 0.0 ],
-					"fontsize" : 8.0,
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 147.0, 78.5, 66.0, 17.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 67.800003, 67.276398, 30.0, 35.0 ],
-					"style" : "",
-					"text" : "print @popup 1",
-					"textcolor" : [ 0.92549, 0.364706, 0.341176, 0.0 ]
 				}
 
 			}
@@ -1705,28 +1727,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
-					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
-					"id" : "obj-9",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 294.0, 31.5, 27.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 67.800003, 76.5, 27.0, 15.0 ],
-					"rounded" : 5.0,
-					"style" : "",
-					"text" : "In",
-					"texton" : "In",
-					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2555,13 +2555,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-32" : [ "toggle[1]", "toggle", 0 ],
-			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
 			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
+			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
+			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
+			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
+			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

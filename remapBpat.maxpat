@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 509.0, 490.0 ],
+		"rect" : [ 887.0, 336.0, 509.0, 490.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,25 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 9.0, 126.5, 198.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 6.0, 127.0, 180.0, 33.0 ],
+					"style" : "",
+					"text" : "(Set the LOCK if you want it to stay focussed on that range.)",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
@@ -150,7 +169,7 @@
 					"patching_rect" : [ 290.0, 90.0, 139.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 6.0, 143.5, 181.5, 40.0 ],
+					"presentation_rect" : [ 6.0, 189.5, 181.5, 40.0 ],
 					"style" : "",
 					"text" : "Then select new desired values...",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -168,7 +187,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 175.0, 304.666687, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 223.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 124.0, 269.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -184,7 +203,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 85.5, 273.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 223.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 269.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -200,7 +219,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 175.0, 334.0, 54.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.0, 197.333328, 62.0, 20.0 ],
+					"presentation_rect" : [ 118.0, 243.333328, 62.0, 20.0 ],
 					"style" : "",
 					"text" : "New Max",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -218,7 +237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.5, 308.833313, 63.976398, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.5, 197.333328, 61.0, 20.0 ],
+					"presentation_rect" : [ 14.5, 243.333328, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "New Min",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -971,7 +990,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 322.0, 215.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 189.5, 181.5, 73.0 ],
+					"presentation_rect" : [ 6.0, 235.5, 181.5, 73.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
