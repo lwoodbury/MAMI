@@ -293,7 +293,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 224.0, 234.0, 75.0, 20.0 ],
+					"patching_rect" : [ 241.0, 234.0, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.5, 81.333328, 82.0, 20.0 ],
 					"style" : "",
@@ -423,10 +423,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
-									"outlettype" : [ "int", "bang", "bang" ],
-									"patching_rect" : [ 72.0, 94.0, 40.0, 22.0 ],
+									"outlettype" : [ "float", "bang", "bang" ],
+									"patching_rect" : [ 72.0, 94.0, 41.0, 22.0 ],
 									"style" : "",
-									"text" : "t i b b"
+									"text" : "t f b b"
 								}
 
 							}
@@ -450,9 +450,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 72.0, 58.0, 50.0, 22.0 ],
+									"patching_rect" : [ 72.0, 58.0, 63.0, 22.0 ],
 									"style" : "",
-									"text" : "change"
+									"text" : "change 0."
 								}
 
 							}
@@ -464,7 +464,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 72.0, 20.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -598,11 +598,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 234.0, 31.0, 22.0 ],
+					"patching_rect" : [ 191.0, 234.0, 40.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.5, 99.5, 36.0, 22.0 ],
 					"style" : "",
-					"text" : "700",
+					"text" : "4.31",
 					"textcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"textjustification" : 1
 				}
@@ -710,10 +710,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
-									"outlettype" : [ "int", "bang", "bang" ],
-									"patching_rect" : [ 72.0, 94.0, 40.0, 22.0 ],
+									"outlettype" : [ "float", "bang", "bang" ],
+									"patching_rect" : [ 72.0, 94.0, 41.0, 22.0 ],
 									"style" : "",
-									"text" : "t i b b"
+									"text" : "t f b b"
 								}
 
 							}
@@ -737,9 +737,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 72.0, 58.0, 50.0, 22.0 ],
+									"patching_rect" : [ 72.0, 58.0, 63.0, 22.0 ],
 									"style" : "",
-									"text" : "change"
+									"text" : "change 0."
 								}
 
 							}
@@ -751,7 +751,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
+									"outlettype" : [ "float" ],
 									"patching_rect" : [ 72.0, 20.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -889,7 +889,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 29.25, 99.5, 36.0, 22.0 ],
 					"style" : "",
-					"text" : "300",
+					"text" : "-5.",
 					"textcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
 					"textjustification" : 1
 				}
@@ -914,10 +914,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 160.0, 64.0, 64.0, 22.0 ],
+					"outlettype" : [ "int", "float", "float" ],
+					"patching_rect" : [ 160.0, 64.0, 71.0, 22.0 ],
 					"style" : "",
-					"text" : "t 1 0 1023"
+					"text" : "t 1 0. 1023."
 				}
 
 			}
@@ -959,10 +959,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 175.0, 172.5, 47.0, 22.0 ],
+					"outlettype" : [ "float", "int", "int" ],
+					"patching_rect" : [ 175.0, 172.5, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "peak 0"
+					"text" : "peak 0."
 				}
 
 			}
@@ -972,10 +972,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 76.0, 172.5, 75.0, 22.0 ],
+					"outlettype" : [ "float", "int", "int" ],
+					"patching_rect" : [ 76.0, 172.5, 78.0, 22.0 ],
 					"style" : "",
-					"text" : "trough 1023"
+					"text" : "trough 1023."
 				}
 
 			}
@@ -1129,7 +1129,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"midpoints" : [ 214.5, 93.75, 141.5, 93.75 ],
+					"midpoints" : [ 221.5, 93.75, 144.5, 93.75 ],
 					"source" : [ "obj-16", 2 ]
 				}
 

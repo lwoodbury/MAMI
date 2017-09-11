@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 487.0, 372.0, 655.0, 452.0 ],
+		"rect" : [ 878.0, 546.0, 655.0, 452.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -633,7 +633,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1041.0, 380.0, 201.0, 156.0 ],
+						"rect" : [ 1041.0, 380.0, 576.0, 518.0 ],
 						"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -725,9 +725,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 45.25, 122.0, 55.0, 22.0 ],
+													"patching_rect" : [ 45.25, 122.0, 135.0, 22.0 ],
 													"style" : "",
-													"text" : "route #1"
+													"text" : "combine name .maxpat"
 												}
 
 											}
@@ -835,7 +835,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-14", 0 ],
-													"source" : [ "obj-25", 1 ]
+													"source" : [ "obj-25", 0 ]
 												}
 
 											}
@@ -2555,13 +2555,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
 			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-32" : [ "toggle[1]", "toggle", 0 ],
 			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
 			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
-			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
+			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
+			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

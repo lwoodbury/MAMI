@@ -1952,6 +1952,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -2109,6 +2110,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-30",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 2,
@@ -2208,7 +2210,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 693.0, 340.0, 202.0, 442.0 ],
+						"rect" : [ 693.0, 340.0, 201.0, 440.0 ],
 						"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -2236,6 +2238,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-37",
@@ -2481,6 +2484,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -2520,6 +2524,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -3263,7 +3268,7 @@
 									"id" : "obj-21",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "serialFad.maxpat",
+									"name" : "MIDIfad.maxpat",
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"offset" : [ 0.0, 0.0 ],
@@ -3406,6 +3411,13 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-25", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -3414,13 +3426,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-28", 0 ],
 									"source" : [ "obj-25", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-25", 2 ]
 								}
 
 							}
@@ -3935,7 +3940,6 @@
 					"patching_rect" : [ 303.0, 336.0, 62.0, 62.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.8, 67.276398, 70.447205, 70.447205 ],
-					"size" : 1023.0,
 					"style" : "",
 					"thickness" : 100.0
 				}
@@ -3971,7 +3975,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4842,52 +4846,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
-			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "outputButtonModule.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "outputChooserBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "outputMIDI.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "serialFad.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "remapBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "tap",
 				"default" : 				{
