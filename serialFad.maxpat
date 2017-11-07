@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1163.0, 325.0, 551.0, 658.0 ],
+		"rect" : [ 655.0, 320.0, 551.0, 658.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,19 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 536.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "168."
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
@@ -931,9 +918,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 185.5, 442.0, 73.0, 22.0 ],
+					"patching_rect" : [ 183.5, 442.0, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "routepass 1"
+					"text" : "routepass pot"
 				}
 
 			}
@@ -1103,9 +1090,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 88.0, 428.0, 38.0, 22.0 ],
+					"patching_rect" : [ 88.0, 428.0, 58.0, 22.0 ],
 					"style" : "",
-					"text" : "route"
+					"text" : "route pot"
 				}
 
 			}
@@ -1116,9 +1103,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.0, 298.0, 74.0, 22.0 ],
+					"patching_rect" : [ 107.0, 298.0, 69.0, 22.0 ],
 					"style" : "",
-					"text" : "symbol \"00\""
+					"text" : "symbol pot"
 				}
 
 			}
@@ -1314,16 +1301,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 1 ],
-					"order" : 0,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1391,7 +1369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 1 ],
-					"midpoints" : [ 154.0, 424.5, 249.0, 424.5 ],
+					"midpoints" : [ 154.0, 424.5, 257.0, 424.5 ],
 					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}

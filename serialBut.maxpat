@@ -376,9 +376,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 185.5, 442.0, 73.0, 22.0 ],
+					"patching_rect" : [ 185.5, 442.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "routepass 1"
+					"text" : "routepass b1"
 				}
 
 			}
@@ -546,9 +546,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 88.0, 428.0, 38.0, 22.0 ],
+					"patching_rect" : [ 88.0, 428.0, 55.0, 22.0 ],
 					"style" : "",
-					"text" : "route"
+					"text" : "route b1"
 				}
 
 			}
@@ -559,9 +559,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.0, 298.0, 74.0, 22.0 ],
+					"patching_rect" : [ 107.0, 298.0, 65.0, 22.0 ],
 					"style" : "",
-					"text" : "symbol \"00\""
+					"text" : "symbol b1"
 				}
 
 			}
@@ -811,7 +811,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 1 ],
-					"midpoints" : [ 154.0, 424.5, 249.0, 424.5 ],
+					"midpoints" : [ 154.0, 424.5, 256.0, 424.5 ],
 					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
