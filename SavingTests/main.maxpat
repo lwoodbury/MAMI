@@ -18057,6 +18057,29 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"args" : [ "device2" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-16",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "deviceModule.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 424.0, 33.0, 424.0, 307.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 424.0, 33.0, 424.0, 307.0 ],
+					"varname" : "device2",
+					"viewvisibility" : 1
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -18168,6 +18191,7 @@
 			"obj-6::obj-40::obj-20" : [ "Mute", "Mute", 0 ],
 			"obj-6::obj-5::obj-9::obj-83::obj-8" : [ "2007_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-367::obj-8" : [ "1948_notemap", "notemap", 0 ],
+			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-24" : [ "umenu[17]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-97::obj-8" : [ "2002_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-352::obj-8" : [ "1943_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-37::obj-8" : [ "1997_notemap", "notemap", 0 ],
@@ -18175,18 +18199,19 @@
 			"obj-6::obj-5::obj-9::obj-22::obj-8" : [ "1992_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-322::obj-8" : [ "1933_notemap", "notemap", 0 ],
 			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-21::obj-28" : [ "live.button[3]", "live.button", 0 ],
-			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-24" : [ "umenu[13]", "umenu[9]", 0 ],
+			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-31" : [ "umenu[13]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-196::obj-8" : [ "1987_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-307::obj-8" : [ "1928_notemap", "notemap", 0 ],
 			"obj-6::obj-37::obj-46" : [ "Offset[1]", "Offset", 0 ],
 			"obj-6::obj-5::obj-9::obj-181::obj-8" : [ "1982_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-292::obj-8" : [ "1923_notemap", "notemap", 0 ],
-			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-21::obj-30" : [ "umenu[8]", "umenu[9]", 0 ],
+			"obj-16::obj-6::obj-45" : [ "umenu[8]", "umenu[9]", 0 ],
 			"obj-6::obj-38::obj-51" : [ "CV2", "CV2", 0 ],
 			"obj-6::obj-5::obj-9::obj-166::obj-8" : [ "1977_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-277::obj-8" : [ "1918_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-199::obj-8" : [ "1892_notemap", "notemap", 0 ],
 			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-21::obj-30" : [ "umenu[15]", "umenu[9]", 0 ],
 			"obj-6::obj-35::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-6::obj-38::obj-95" : [ "ResCV", "CV", 0 ],
 			"obj-6::obj-5::obj-9::obj-151::obj-8" : [ "1972_notemap", "notemap", 0 ],
@@ -18207,7 +18232,7 @@
 			"obj-6::obj-38::obj-23" : [ "Offset", "Offset", 0 ],
 			"obj-6::obj-5::obj-9::obj-49::obj-8" : [ "2001_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-349::obj-8" : [ "1942_notemap", "notemap", 0 ],
-			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-31" : [ "umenu[12]", "umenu[9]", 0 ],
+			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-21::obj-30" : [ "umenu[12]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-34::obj-8" : [ "1996_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-334::obj-8" : [ "1937_notemap", "notemap", 0 ],
 			"obj-9::obj-28::obj-20::obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
@@ -18225,12 +18250,13 @@
 			"obj-6::obj-5::obj-9::obj-178::obj-8" : [ "1981_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-289::obj-8" : [ "1922_notemap", "notemap", 0 ],
 			"obj-5::obj-13" : [ "toggle[3]", "toggle", 0 ],
-			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-24" : [ "umenu[7]", "umenu[9]", 0 ],
+			"obj-16::obj-19::obj-30" : [ "umenu[7]", "umenu[9]", 0 ],
 			"obj-6::obj-38::obj-63" : [ "CV3", "CV3", 0 ],
 			"obj-6::obj-5::obj-9::obj-163::obj-8" : [ "1976_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-274::obj-8" : [ "1917_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-23::obj-2" : [ "pastebang[1]", "pastebang", 0 ],
 			"obj-5::obj-7" : [ "toggle[8]", "toggle", 0 ],
+			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-24" : [ "umenu[14]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-148::obj-8" : [ "1971_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-259::obj-8" : [ "1912_notemap", "notemap", 0 ],
 			"obj-9::obj-6::obj-45" : [ "umenu[4]", "umenu[9]", 0 ],
@@ -18254,7 +18280,7 @@
 			"obj-6::obj-5::obj-9::obj-46::obj-8" : [ "2000_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-346::obj-8" : [ "1941_notemap", "notemap", 0 ],
 			"obj-5::obj-9" : [ "toggle[9]", "toggle", 0 ],
-			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-31" : [ "umenu[6]", "umenu[9]", 0 ],
+			"obj-16::obj-19::obj-27" : [ "umenu[6]", "umenu", 0 ],
 			"obj-6::obj-5::obj-9::obj-31::obj-8" : [ "1995_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-331::obj-8" : [ "1936_notemap", "notemap", 0 ],
 			"obj-6::obj-35::obj-22" : [ "Mute[2]", "Mute", 0 ],
@@ -18280,7 +18306,7 @@
 			"obj-6::obj-5::obj-9::obj-115::obj-8" : [ "1960_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-226::obj-8" : [ "1901_notemap", "notemap", 0 ],
 			"obj-9::obj-28::obj-20::obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-31" : [ "umenu[9]", "umenu[9]", 0 ],
+			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-21::obj-30" : [ "umenu[9]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-68::obj-8" : [ "2014_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-388::obj-8" : [ "1955_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-211::obj-8" : [ "1896_notemap", "notemap", 0 ],
@@ -18295,7 +18321,7 @@
 			"obj-5::obj-5" : [ "toggle[4]", "toggle", 0 ],
 			"obj-6::obj-5::obj-9::obj-43::obj-8" : [ "1999_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-343::obj-8" : [ "1940_notemap", "notemap", 0 ],
-			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
+			"obj-16::obj-24::obj-45" : [ "umenu[5]", "umenu[9]", 0 ],
 			"obj-6::obj-5::obj-9::obj-28::obj-8" : [ "1994_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-328::obj-8" : [ "1935_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-8::obj-8" : [ "1989_notemap", "notemap", 0 ],
@@ -18303,7 +18329,7 @@
 			"obj-6::obj-37::obj-51" : [ "Freq[1]", "Freq", 0 ],
 			"obj-6::obj-5::obj-9::obj-187::obj-8" : [ "1984_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-298::obj-8" : [ "1925_notemap", "notemap", 0 ],
-			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-21::obj-30" : [ "umenu[11]", "umenu[9]", 0 ],
+			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-24" : [ "umenu[11]", "umenu[9]", 0 ],
 			"obj-6::obj-39::obj-80" : [ "Response", "Response", 0 ],
 			"obj-6::obj-5::obj-9::obj-172::obj-8" : [ "1979_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-283::obj-8" : [ "1920_notemap", "notemap", 0 ],
@@ -18341,13 +18367,14 @@
 			"obj-6::obj-37::obj-106" : [ "CV3[1]", "CV3", 0 ],
 			"obj-6::obj-5::obj-9::obj-184::obj-8" : [ "1983_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-295::obj-8" : [ "1924_notemap", "notemap", 0 ],
+			"obj-9::obj-28::obj-20::obj-21::obj-24::obj-31" : [ "umenu[10]", "umenu[9]", 0 ],
 			"obj-9::obj-28::obj-23::obj-4::obj-32" : [ "toggle[6]", "toggle", 0 ],
-			"obj-9::obj-28::obj-23::obj-21::obj-24::obj-24" : [ "umenu[10]", "umenu[9]", 0 ],
 			"obj-6::obj-38::obj-54" : [ "CV1", "CV1", 0 ],
 			"obj-6::obj-5::obj-9::obj-169::obj-8" : [ "1978_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-280::obj-8" : [ "1919_notemap", "notemap", 0 ],
 			"obj-6::obj-5::obj-9::obj-202::obj-8" : [ "1893_notemap", "notemap", 0 ],
-			"obj-6::obj-5::obj-58" : [ "reverse", "reverse", 0 ]
+			"obj-6::obj-5::obj-58" : [ "reverse", "reverse", 0 ],
+			"obj-9::obj-28::obj-25::obj-21::obj-24::obj-31" : [ "umenu[16]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -18373,6 +18400,34 @@
 			}
 , 			{
 				"name" : "buttonFaderModule.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "serialBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thruPoly.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OSCBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MIDIBpat.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
@@ -18436,34 +18491,6 @@
 			}
 , 			{
 				"name" : "serialBut.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "serialBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thruPoly.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OSCBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MIDIBpat.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
