@@ -38,6 +38,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 458.0, 11.0, 91.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"parameter_enable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"style" : "",
+					"text" : "pattrstorage #1",
+					"varname" : "#1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 465.0, 65.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"radiogroup" : [ 0 ],
+						"slider" : [ 250 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u938001607"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
@@ -1441,13 +1480,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.5, 149.5, 49.0, 33.0 ],
+					"patching_rect" : [ 181.0, 149.5, 49.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.8, 17.333332, 89.0, 21.0 ],
 					"style" : "",
 					"text" : "Smooth Amount",
 					"textcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "message"
 				}
 
 			}
@@ -1469,7 +1509,8 @@
 					"presentation_rect" : [ 2.8, 17.333332, 94.609734, 21.0 ],
 					"size" : 1000.0,
 					"style" : "",
-					"thickness" : 80.0
+					"thickness" : 80.0,
+					"varname" : "slider"
 				}
 
 			}
@@ -3405,19 +3446,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 9.0, 72.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-16",
@@ -3615,58 +3643,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 37.5, 415.0, 79.0, 22.0 ],
-					"style" : "",
-					"text" : "route symbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.5, 443.0, 73.0, 22.0 ],
-					"style" : "",
-					"text" : "fromsymbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.5, 356.0, 53.0, 22.0 ],
-					"style" : "",
-					"text" : "int 2000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 37.5, 386.0, 182.0, 22.0 ],
-					"style" : "",
-					"text" : "dialog Enter time in milliseconds"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-63",
@@ -3734,7 +3710,8 @@
 					"shape" : 2,
 					"size" : 3,
 					"style" : "",
-					"value" : 0
+					"value" : 0,
+					"varname" : "radiogroup"
 				}
 
 			}
@@ -3830,13 +3807,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
-					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -4009,6 +3979,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
@@ -4074,27 +4060,6 @@
 					"destination" : [ "obj-61", 0 ],
 					"order" : 1,
 					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -4257,52 +4222,52 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
+			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
 			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
 			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ]
+			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
+			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "outputButtonModule.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outputChooserBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outputMIDI.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "serialFad.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spaceFixer.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "remapBpat.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
