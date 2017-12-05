@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 499.0, 122.0, 323.0, 460.0 ],
+		"rect" : [ 388.0, 291.0, 727.0, 477.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -822,7 +822,7 @@
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patcher" : 					{
@@ -835,7 +835,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 778.0, 296.0, 640.0, 480.0 ],
+						"rect" : [ 205.0, 516.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -863,6 +863,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-21",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 527.5, 184.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-16",
 									"linecount" : 2,
@@ -990,9 +1004,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 432.0, 260.0, 99.0, 22.0 ],
+									"patching_rect" : [ 427.0, 260.0, 71.0, 22.0 ],
 									"style" : "",
-									"text" : "combine button i"
+									"text" : "combine s i"
 								}
 
 							}
@@ -1084,7 +1098,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 314.0, 587.0, 35.0 ],
 									"style" : "",
-									"text" : "script newobject bpatcher $5 @args $4 $3 @varname $3 @patching_position $1 $2, script size $3 101 137, script sendbox $3 presentation 1, script connect receiver 0 $3 0"
+									"text" : "script newobject bpatcher $5 @args $4 $3 @varname $3 @patching_position $1 $2, script size $3 101 162, script sendbox $3 presentation 1, script connect receiver 0 $3 0"
 								}
 
 							}
@@ -1244,6 +1258,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
 									"source" : [ "obj-27", 0 ]
 								}
@@ -1314,7 +1335,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 2 ],
-									"midpoints" : [ 441.5, 285.0, 388.0, 285.0, 388.0, 261.0, 277.5, 261.0 ],
+									"midpoints" : [ 436.5, 285.0, 388.0, 285.0, 388.0, 261.0, 277.5, 261.0 ],
 									"order" : 0,
 									"source" : [ "obj-7", 0 ]
 								}
@@ -1323,7 +1344,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 2 ],
-									"midpoints" : [ 441.5, 285.0, 387.0, 285.0, 387.0, 234.0, 149.0, 234.0 ],
+									"midpoints" : [ 436.5, 285.0, 387.0, 285.0, 387.0, 234.0, 149.0, 234.0 ],
 									"order" : 1,
 									"source" : [ "obj-7", 0 ]
 								}
@@ -1444,7 +1465,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 3 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
