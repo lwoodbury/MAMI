@@ -39,6 +39,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 27.0, 298.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"textbutton" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u647003565"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 58.0, 386.0, 50.0, 22.0 ],
+					"style" : "",
+					"varname" : "message"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -287,7 +318,8 @@
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"texton" : "Reverse Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"usebgoncolor" : 1
+					"usebgoncolor" : 1,
+					"varname" : "textbutton"
 				}
 
 			}
@@ -729,8 +761,40 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"order" : 1,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"order" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -819,6 +883,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"order" : 2,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"order" : 1,
 					"source" : [ "obj-35", 0 ]
@@ -878,7 +950,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "spaceFixer.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

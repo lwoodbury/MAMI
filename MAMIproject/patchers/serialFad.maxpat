@@ -39,6 +39,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 385.0, 29.5, 22.0 ],
+					"style" : "",
+					"varname" : "message[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 187.0, 217.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"textbutton" : [ 0 ],
+						"textbutton[1]" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u573004535"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -829,7 +861,8 @@
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"texton" : "Reverse Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"usebgoncolor" : 1
+					"usebgoncolor" : 1,
+					"varname" : "textbutton"
 				}
 
 			}
@@ -889,7 +922,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 183.5, 524.0, 93.0, 22.0 ],
+					"patching_rect" : [ 183.5, 590.0, 93.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.0, 60.0, 153.5, 22.0 ],
 					"style" : "",
@@ -905,7 +938,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.5, 485.0, 34.0, 22.0 ],
+					"patching_rect" : [ 183.5, 551.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "gate"
 				}
@@ -918,7 +951,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 183.5, 442.0, 83.0, 22.0 ],
+					"patching_rect" : [ 183.5, 508.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "routepass pot"
 				}
@@ -1009,7 +1042,8 @@
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Remap Range",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
-					"usebgoncolor" : 1
+					"usebgoncolor" : 1,
+					"varname" : "textbutton[1]"
 				}
 
 			}
@@ -1039,7 +1073,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.0, 462.0, 30.0, 30.0 ],
+					"patching_rect" : [ 88.0, 528.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -1090,7 +1124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 88.0, 428.0, 58.0, 22.0 ],
+					"patching_rect" : [ 88.0, 494.0, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "route pot"
 				}
@@ -1329,8 +1363,48 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"order" : 2,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"order" : 1,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"order" : 0,
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -1379,6 +1453,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"order" : 1,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 1 ],
+					"order" : 2,
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1437,7 +1519,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "spaceFixer.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
