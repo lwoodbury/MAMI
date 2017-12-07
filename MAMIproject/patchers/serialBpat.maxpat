@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 481.0, 363.0, 853.0, 639.0 ],
+		"rect" : [ 792.0, 402.0, 853.0, 639.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,59 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 547.0, 122.0, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "onebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 702.0, 111.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 667.0, 86.0, 24.0, 24.0 ],
+					"style" : "",
+					"varname" : "toggle"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 667.0, 141.0, 54.0, 22.0 ],
+					"style" : "",
+					"text" : "gate 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -52,7 +105,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u255003579"
+					"varname" : "u441010775"
 				}
 
 			}
@@ -184,16 +237,16 @@
 								"box" : 								{
 									"fontsize" : 16.0,
 									"id" : "obj-4",
-									"linecount" : 8,
+									"linecount" : 11,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 54.0, 564.0, 149.0 ],
+									"patching_rect" : [ 10.0, 54.0, 564.0, 203.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 8,
-									"presentation_rect" : [ 10.0, 54.0, 564.0, 149.0 ],
+									"presentation_linecount" : 11,
+									"presentation_rect" : [ 10.0, 54.0, 564.0, 203.0 ],
 									"style" : "",
-									"text" : "- The input is expected to be in the format of and ID, a space and a value\", for example \"1 1023\" \n\n- This system requires serial inputs to have an ID number and not a name, for example \"1\" is ok, but \"button1\" is not\n\n- In order to listen out for incoming values when creating an input button/fader you will need to choose a port first!!",
+									"text" : "- The input is expected to be in the format of and ID, a space and a value\", for example \"1 1023\" \n\n- This system requires serial inputs to have an ID number and not a name, for example \"1\" is ok, but \"button1\" is not\n\n- Serial messages need to be terminated with carriage return and new line ASCII characters (Serial.println in Arduino terms)\n\n- In order to listen out for incoming values when creating an input button/fader you will need to choose a port first!!",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -334,7 +387,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1042.0, 87.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -524,6 +577,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-55", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-55", 0 ],
 									"source" : [ "obj-58", 0 ]
 								}
@@ -567,7 +627,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 149.5, 213.0, 107.0, 22.0 ],
+					"patching_rect" : [ 196.0, 217.0, 107.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -817,7 +877,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.25, 254.190277, 150.0, 74.0 ],
+									"patching_rect" : [ 128.25, 259.690277, 150.0, 74.0 ],
 									"style" : "",
 									"text" : "Look for serial string terminated with carriage return and new line ASCII characters (Serial.println in Arduino terms)"
 								}
@@ -1611,6 +1671,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-14", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"order" : 1,
 					"source" : [ "obj-19", 0 ]
@@ -1635,7 +1709,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"order" : 0,
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -1666,13 +1756,6 @@
 					"destination" : [ "obj-22", 1 ],
 					"midpoints" : [ 221.5, 157.25, 176.666672, 157.25 ],
 					"source" : [ "obj-30", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -1737,13 +1820,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-54", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}
