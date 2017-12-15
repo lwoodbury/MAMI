@@ -179,7 +179,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u636004769"
+					"varname" : "u758003640"
 				}
 
 			}
@@ -767,7 +767,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 449.0, 283.0, 202.0, 157.0 ],
+						"rect" : [ 1029.0, 248.0, 201.0, 156.0 ],
 						"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -819,12 +819,12 @@
 									"patching_rect" : [ 193.0, 264.0, 58.0, 22.0 ],
 									"restore" : 									{
 										"number" : [ 1 ],
-										"toggle" : [ 0 ]
+										"toggle" : [ 1 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u280007531"
+									"varname" : "u996003643"
 								}
 
 							}
@@ -1472,6 +1472,7 @@
 							}
 , 							{
 								"box" : 								{
+									"args" : [ "#1" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -1480,7 +1481,7 @@
 									"id" : "obj-21",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "#1.maxpat",
+									"name" : "inBut.maxpat",
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"offset" : [ 0.0, 0.0 ],
@@ -1628,6 +1629,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 1,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -1780,6 +1782,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
+									"disabled" : 1,
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -2723,17 +2726,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
-			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
+			"obj-32" : [ "toggle[1]", "toggle", 0 ],
 			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "#1.maxpat",
+				"name" : "inBut.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spaceFixer.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

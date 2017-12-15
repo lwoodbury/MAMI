@@ -51,7 +51,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u045003474"
+					"varname" : "u390000750"
 				}
 
 			}
@@ -225,9 +225,9 @@
 									"numinlets" : 5,
 									"numoutlets" : 5,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 33.75, 128.0, 199.0, 22.0 ],
+									"patching_rect" : [ 33.75, 128.0, 133.0, 22.0 ],
 									"style" : "",
-									"text" : "sel serialBut MIDIbut HIbut OSCbut"
+									"text" : "sel Serial MIDI HI OSC"
 								}
 
 							}
