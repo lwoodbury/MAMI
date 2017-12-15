@@ -145,7 +145,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u898004679"
+					"varname" : "u156005637"
 				}
 
 			}
@@ -2045,7 +2045,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 161.0, 243.0, 680.0, 738.0 ],
+						"rect" : [ 534.0, 279.0, 201.0, 440.0 ],
 						"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -2087,7 +2087,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u270016416"
+									"varname" : "u368005636"
 								}
 
 							}
@@ -4292,12 +4292,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
+			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
 			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 611.0, 343.0, 197.0, 154.0 ],
+		"rect" : [ 611.0, 343.0, 195.0, 152.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -94,7 +94,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u261003129"
+					"varname" : "u266005046"
 				}
 
 			}
