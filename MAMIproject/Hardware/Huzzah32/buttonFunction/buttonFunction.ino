@@ -1,10 +1,15 @@
-//button array
-byte buttons[] = {27, 33};
-#define numBut sizeof(buttons)
-//byte pressed[numBut], released[numBut];
+/* Tracking button presses with an array and a function,
+ * only outputting the button states when they change.
+ * Sending button changes out over OSC using Huzzah32
+ * 
+ * Luke Woodbury 16/1/18
+ */
 
-//LED pin
-const int LEDpin = 13;
+
+
+//button pin array, add the pins  your buttons are on
+byte buttons[] = {13, 15, 27, 33};
+const int numBut = sizeof(buttons);
 
 //Wifi and OSC stuff
 //#include <ESP8266WiFi.h>
@@ -26,13 +31,12 @@ void setup() {
   // set up serial port
   Serial.begin(115200);
   
+  //debug
   Serial.print("Button checker with ");
   Serial.print(numBut, DEC);
   Serial.println(" buttons");
-
-  pinMode(LEDpin, OUTPUT);
-
-
+  
+  //set up button pins as inputs 
   for (int i=0; i<numBut; i++){
     pinMode(buttons[i], INPUT);
     Serial.print("Button inputs ");
@@ -69,14 +73,18 @@ void loop() {
 }
 
 void checkButtons() {
-  
+  //arrays to hold current and last state of buttons 
   static byte lastState[numBut];
   static byte currentState[numBut];
 
+  //start a for loop
   for (int i=0; i<numBut; i++){
-  currentState[i] = digitalRead(buttons[i]);   // read the button and fill array
+    // read the button pins and fill current array
+    currentState[i] = digitalRead(buttons[i]);
     
-    if (currentState[i] != lastState[i]){
+    //compare each index of the current and last array
+    if (currentState[i] != lastState[i]){  //if they are not the same as last time
+        //print them out
         Serial.print("b");
         Serial.print(i);
         Serial.print(" ");
@@ -91,6 +99,7 @@ void checkButtons() {
         Udp.endPacket();
         msg.empty();
         
+        //overwrite the last state with the current one
         lastState[i] = currentState[i];
         
     }
