@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 249.0, 284.0, 705.0, 617.0 ],
+		"rect" : [ 758.0, 403.0, 705.0, 617.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -239,13 +239,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 819.0, 217.0, 192.0, 22.0 ],
+									"patching_rect" : [ 819.0, 217.0, 179.0, 35.0 ],
 									"style" : "",
-									"text" : "script sendbox outBpat replace $1"
+									"text" : "script sendbox outBpat replace $1, ctrlName"
 								}
 
 							}
@@ -839,8 +840,8 @@
 		"parameters" : 		{
 			"obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
 			"obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-1" : [ "live.button[1]", "live.button", 0 ],
+			"obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ]
 		}
 ,
