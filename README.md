@@ -18,3 +18,15 @@ The second example includes some bespoke instruments designed to be simple enoug
 INSTRUCTIONS:
 - Open the MAMIproject.maxproj file within the main project folder
 - Follow the instructions! 
+
+WHAT STAGE IS SOFTWARE AT:
+- functionality to build devices 
+- Lots of input mapping functions available 
+- Very close to complete saving function
+- Started working on output mappings and sound module
+
+WHAT STAGE IS HARDWARE AT:
+- Working prototype 
+- Sending OSC over existing Wifi no problem, limited packet loss based on network performance
+- Setting device as access point and doing adhoc broadcast working but packet loss too severe, this is a limitation of UDP multicast on WiFi and can not be overcome
+- Setting device as access point and doing adhoc unicast working no problem, but trying to code a method to extract IP from connecting client so as to have an auto setup and not require entering of IP details
