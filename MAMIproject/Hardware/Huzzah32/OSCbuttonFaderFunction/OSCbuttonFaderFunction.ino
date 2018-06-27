@@ -28,11 +28,11 @@ const int numFad = sizeof(faders);
 #include <WiFiUdp.h>
 #include <OSCMessage.h>
 
-char ssid[] = "myNetwork";          // your network SSID (name)
-char pass[] = "myPassword";                    // your network password
+char ssid[] = "Sensory Studio Airport";          // your network SSID (name)
+char pass[] = "sensorystudio";                    // your network password
 
 WiFiUDP Udp;                                // A UDP instance to let us send and receive packets over UDP
-const IPAddress outIp(169, 254, 227, 48);   // remote IP of your computer
+const IPAddress outIp(10, 133, 113, 63);   // remote IP of your computer
 const unsigned int outPort = 8000;          // remote port to receive OSC
 const unsigned int localPort = 9000;        // local port to listen for OSC packets (actually not used for sending)
 

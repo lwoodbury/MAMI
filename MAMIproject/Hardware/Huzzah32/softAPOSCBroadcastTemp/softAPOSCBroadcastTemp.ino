@@ -23,7 +23,17 @@ const int redLEDpin = 26;
 const int greenLEDpin = 25;
 const int blueLEDpin = 4;
 
+//int IPAddress remoteIp(0,0,0,0);
+//static uint16_t remotePort = 0;
+
+
+char packetBuffer[255]; //buffer to hold incoming packet
+char  ReplyBuffer[] = "acknowledged";       // a string to send back
+
 void setup() {
+  Serial.begin(115200);
+    //This initializes udp and transfer buffer
+  Udp.begin(localPort);
     //!!LEDs used are Common Anode so HIGH and LOW reversed!!
   pinMode(redLEDpin, OUTPUT);
   pinMode(greenLEDpin, OUTPUT);
@@ -39,7 +49,6 @@ void setup() {
     Serial.println(i);
   }
   
-  Serial.begin(115200);
   Serial.println();
   Serial.print("Configuring access point...");
   /* You can remove the password parameter if you want the AP to be open. */
@@ -51,17 +60,32 @@ void setup() {
 
   digitalWrite(redLEDpin, HIGH);
   digitalWrite(greenLEDpin, LOW);
+
+
   
 }
 
 
 void loop() {
-  checkButtons();
-  delay(5);
-  checkFaders();
-  delay(5);
-}
+   // receive incoming UDP packets
+  delay(50);
+  uint8_t buffer[50] = "hello world";
+    memset(buffer, 0, 50);
+Udp.parsePacket();
+  //receive response from server, it will be HELLO WORLD
+  if(Udp.read(buffer, 50) > 0){
+    Serial.print("Server to client: ");
+    Serial.println((char *)buffer);
+      Serial.println(Udp.remoteIP());
+  }
 
+
+ // checkButtons();
+  //delay(5);
+  //checkFaders();
+  //delay(5);
+}
+/*
 void checkButtons() {
   //arrays to hold current and last state of buttons 
   static byte lastState[numBut];
@@ -130,6 +154,6 @@ void checkFaders() {
         //overwrite the last state with the current one
         lastState[i] = currentState[i];
         
-    }
+   }
   }
-}
+}*/
