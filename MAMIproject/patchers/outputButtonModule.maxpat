@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 758.0, 403.0, 705.0, 617.0 ],
+		"rect" : [ 758.0, 403.0, 753.0, 643.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -165,12 +165,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 649.0, 268.0, 951.0, 473.0 ],
+						"rect" : [ 324.0, 185.0, 1455.0, 479.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -198,6 +198,33 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "outputSampler" ],
+									"patching_rect" : [ 1023.0, 174.0, 95.0, 22.0 ],
+									"style" : "",
+									"text" : "t outputSampler"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1023.0, 217.0, 179.0, 35.0 ],
+									"style" : "",
+									"text" : "script sendbox outBpat replace $1, ctrlName"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
@@ -280,12 +307,12 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
-									"numinlets" : 6,
-									"numoutlets" : 6,
-									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 380.0, 84.0, 264.0, 22.0 ],
+									"numinlets" : 7,
+									"numoutlets" : 7,
+									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 380.0, 84.0, 364.0, 22.0 ],
 									"style" : "",
-									"text" : "sel MIDI \"Max Send\" OSC Note \"Internal Synth\""
+									"text" : "sel MIDI \"Max Send\" OSC Note \"Internal Synth\" \"Internal Sampler\""
 								}
 
 							}
@@ -394,6 +421,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-1", 5 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
@@ -492,6 +533,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -520,12 +568,11 @@
 					"id" : "obj-24",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "outputMIDI.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
+					"name" : "outputSampler.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 33.75, 309.0, 538.0, 411.0 ],
+					"patching_rect" : [ 33.75, 309.0, 429.0, 311.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.25, 0.5, 428.0, 310.0 ],
 					"varname" : "outBpat",
@@ -545,7 +592,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -838,11 +885,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ],
-			"obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
+			"obj-24::obj-56" : [ "Stereo", "Stereo", 0 ],
 			"obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
-			"obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ]
+			"obj-24::obj-97" : [ "toggle[16]", "toggle", 0 ],
+			"obj-24::obj-55" : [ "Waveform", "Waveform", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -853,10 +899,34 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "outputMIDI.maxpat",
+				"name" : "outputSampler.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "updown.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "up.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
 				"implicit" : 1
 			}
  ],
