@@ -52,7 +52,7 @@
 					"presentation_rect" : [ 213.25, 43.0, 108.549988, 20.0 ],
 					"rounded" : 5.0,
 					"style" : "",
-					"text" : "Internal Sampler",
+					"text" : "Sample Player",
 					"texton" : "In",
 					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
 					"usebgoncolor" : 1

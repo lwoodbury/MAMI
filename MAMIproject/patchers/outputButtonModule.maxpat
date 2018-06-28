@@ -203,10 +203,10 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "outputSampler" ],
-									"patching_rect" : [ 1023.0, 174.0, 95.0, 22.0 ],
+									"outlettype" : [ "outputSamplePlayer" ],
+									"patching_rect" : [ 1023.0, 174.0, 125.0, 22.0 ],
 									"style" : "",
-									"text" : "t outputSampler"
+									"text" : "t outputSamplePlayer"
 								}
 
 							}
@@ -310,9 +310,9 @@
 									"numinlets" : 7,
 									"numoutlets" : 7,
 									"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-									"patching_rect" : [ 380.0, 84.0, 364.0, 22.0 ],
+									"patching_rect" : [ 380.0, 84.0, 354.0, 22.0 ],
 									"style" : "",
-									"text" : "sel MIDI \"Max Send\" OSC Note \"Internal Synth\" \"Internal Sampler\""
+									"text" : "sel MIDI \"Max Send\" OSC Note \"Internal Synth\" \"Sample Player\""
 								}
 
 							}
@@ -569,7 +569,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "outputSampler.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 33.75, 309.0, 429.0, 311.0 ],
@@ -828,13 +828,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -885,10 +878,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-24::obj-56" : [ "Stereo", "Stereo", 0 ],
-			"obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-24::obj-97" : [ "toggle[16]", "toggle", 0 ],
-			"obj-24::obj-55" : [ "Waveform", "Waveform", 0 ]
+			"obj-1" : [ "live.button[1]", "live.button", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -896,37 +886,6 @@
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "outputSampler.maxpat",
-				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sine.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "updown.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "up.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "square.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg ",
 				"implicit" : 1
 			}
  ],
