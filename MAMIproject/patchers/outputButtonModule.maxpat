@@ -1601,6 +1601,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -1630,7 +1637,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1646,7 +1653,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1718,12 +1725,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-15::obj-49" : [ "live.button[1]", "live.button", 0 ],
 			"obj-18" : [ "live.button[2]", "live.button", 0 ],
 			"obj-15::obj-61" : [ "live.tab", "live.tab", 0 ],
-			"obj-15::obj-97" : [ "toggle[2]", "toggle", 0 ],
 			"obj-24::obj-97" : [ "toggle[3]", "toggle", 0 ],
 			"obj-24::obj-56" : [ "Stereo", "Stereo", 0 ],
+			"obj-15::obj-97" : [ "toggle[16]", "toggle", 0 ],
 			"obj-24::obj-55" : [ "Waveform", "Waveform", 0 ],
 			"obj-1" : [ "live.button[3]", "live.button", 0 ]
 		}

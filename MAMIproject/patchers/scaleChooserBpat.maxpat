@@ -227,9 +227,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 25.5, 170.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.300003, 8.0, 55.0, 22.0 ],
+					"presentation_rect" : [ 4.300003, 8.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "Scale",
+					"text" : "Select Scale",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
