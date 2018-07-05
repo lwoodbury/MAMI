@@ -293,28 +293,6 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"extract" : 1,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.MIDI.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 5,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 731.0, 69.0, 185.0, 116.0 ],
-					"varname" : "bp.MIDI",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
 					"id" : "obj-25",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -349,28 +327,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 6.699997, 171.5, 246.0, 123.0 ],
 					"varname" : "bp.ADSR",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
-					"id" : "obj-19",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Keyboard.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 196.0, 75.0, 506.0, 116.0 ],
-					"varname" : "bp.Keyboard",
 					"viewvisibility" : 1
 				}
 
@@ -2657,7 +2613,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u842004805"
+									"varname" : "u533002795"
 								}
 
 							}
@@ -3689,7 +3645,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage",
-					"varname" : "u164004807"
+					"varname" : "u369002305"
 				}
 
 			}
@@ -3746,20 +3702,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-19", 1 ]
 				}
 
 			}
@@ -3869,39 +3811,30 @@
 			"obj-38::obj-95" : [ "Freq", "Freq", 0 ],
 			"obj-2::obj-11" : [ "PWM", "PWM", 0 ],
 			"obj-2::obj-53" : [ "Mute[1]", "Mute", 0 ],
-			"obj-38::obj-26" : [ "spectral", "spectral", 0 ],
 			"obj-38::obj-55" : [ "power", "power", 0 ],
-			"obj-1::obj-15::obj-2" : [ "pastebang[1]", "pastebang", 0 ],
+			"obj-38::obj-26" : [ "spectral", "spectral", 0 ],
 			"obj-2::obj-46" : [ "Offset", "Offset", 0 ],
 			"obj-24::obj-32" : [ "Sustain", "Sustain", 0 ],
 			"obj-25::obj-55" : [ "Bypass", "Bypass", 0 ],
 			"obj-2::obj-45" : [ "FreqMode", "FreqMode", 0 ],
 			"obj-38::obj-11" : [ "Resonance", "Res", 0 ],
 			"obj-2::obj-51" : [ "Freq[1]", "Freq", 0 ],
-			"obj-1::obj-20" : [ "ModWheelActivityLED", "ModWheelActivityLED", 0 ],
 			"obj-25::obj-33" : [ "Quadrants", "Quadrants", 0 ],
 			"obj-24::obj-20" : [ "Mute", "Mute", 0 ],
 			"obj-38::obj-59" : [ "filter_mode", "filter_mode", 0 ],
-			"obj-19::obj-15::obj-2" : [ "pastebang", "pastebang", 0 ],
-			"obj-19::obj-12" : [ "KeyboardMode", "KeyboardMode", 0 ],
 			"obj-24::obj-1" : [ "Attack", "Attack", 0 ],
 			"obj-2::obj-107" : [ "Linear", "Linear", 0 ],
 			"obj-25::obj-80" : [ "Response", "Response", 0 ],
 			"obj-2::obj-129" : [ "CV2", "CV2", 0 ],
 			"obj-24::obj-15" : [ "Legato", "Legato", 0 ],
-			"obj-1::obj-129" : [ "BendRange", "BendRange", 0 ],
 			"obj-38::obj-63" : [ "CV3[1]", "CV3", 0 ],
-			"obj-1::obj-9" : [ "PitchActivityLED", "PitchActivityLED", 0 ],
-			"obj-19::obj-5" : [ "Octave", "Octave", 0 ],
 			"obj-24::obj-29" : [ "Decay", "Decay", 0 ],
 			"obj-56" : [ "Stereo", "Stereo", 0 ],
 			"obj-2::obj-106" : [ "CV3", "CV3", 0 ],
 			"obj-38::obj-54" : [ "CV1", "CV1", 0 ],
 			"obj-2::obj-36" : [ "PW", "PW", 0 ],
-			"obj-1::obj-69" : [ "GateLED", "GateLED", 0 ],
 			"obj-38::obj-51" : [ "CV2[1]", "CV2", 0 ],
 			"obj-2::obj-4" : [ "Waveform", "Waveform", 0 ],
-			"obj-19::obj-68" : [ "RepeatInterval", "RepeatInterval", 0 ],
 			"obj-24::obj-31" : [ "Release", "Release", 0 ]
 		}
 ,
@@ -3930,25 +3863,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bp.Keyboard.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Input",
+				"name" : "bp.ADSR.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "background_sm.maxpat",
-				"bootpath" : "C74:/packages/BEAP/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pastebang.maxpat",
-				"bootpath" : "C74:/packages/BEAP/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.ADSR.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -3958,12 +3880,6 @@
 				"name" : "bp.VCA.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.MIDI.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
