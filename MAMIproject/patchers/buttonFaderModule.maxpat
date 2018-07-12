@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 110.5, 120.0, 47.0, 22.0 ],
+					"presentation_rect" : [ 110.5, 119.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "xyBpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.501961, 0.662745, 0.67451, 1.0 ],
+					"bgoncolor" : [ 0.921569, 0.219608, 0.164706, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 110.5, 85.5, 75.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 169.0, 6.0, 75.0, 22.0 ],
+					"rounded" : 5.0,
+					"style" : "",
+					"text" : "New XY",
+					"texton" : "New XY",
+					"textoncolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
+					"usebgoncolor" : 1,
+					"varname" : "textbutton[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -389,7 +426,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 120.0, 152.5, 75.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 169.0, 6.0, 75.0, 22.0 ],
+					"presentation_rect" : [ 251.0, 6.0, 75.0, 22.0 ],
 					"rounded" : 5.0,
 					"style" : "",
 					"text" : "Delete All",
@@ -879,7 +916,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u538001050"
+									"varname" : "u780002414"
 								}
 
 							}
@@ -1698,8 +1735,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -1739,6 +1790,10 @@
 
 			}
  ],
+		"parameters" : 		{
+
+		}
+,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
