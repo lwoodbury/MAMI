@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -49,7 +49,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -340,7 +340,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u686004071"
+					"varname" : "u889007615"
 				}
 
 			}
@@ -413,7 +413,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -748,7 +748,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1042,7 +1042,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1360,7 +1360,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1681,7 +1681,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1962,7 +1962,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2787,9 +2787,9 @@
  ],
 		"parameters" : 		{
 			"obj-24::obj-45" : [ "umenu[4]", "umenu[9]", 0 ],
-			"obj-6::obj-45" : [ "umenu[2]", "umenu[9]", 0 ],
+			"obj-19::obj-30" : [ "umenu[3]", "umenu[9]", 0 ],
 			"obj-19::obj-27" : [ "umenu", "umenu", 0 ],
-			"obj-19::obj-30" : [ "umenu[3]", "umenu[9]", 0 ]
+			"obj-6::obj-45" : [ "umenu[2]", "umenu[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

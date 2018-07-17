@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -101,7 +101,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 55.25, 406.0, 77.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.8, 137.300003, 69.0, 20.0 ],
+					"presentation_rect" : [ 2.8, 137.300003, 95.0, 20.0 ],
 					"style" : "",
 					"text" : "#2",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -122,7 +122,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.5, 406.0, 47.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.8, 137.300003, 69.0, 20.0 ],
+					"presentation_rect" : [ 2.8, 137.300003, 95.0, 20.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -145,7 +145,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u989007534"
+					"varname" : "u249002874"
 				}
 
 			}
@@ -161,7 +161,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -507,7 +507,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -974,7 +974,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1274,7 +1274,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1663,7 +1663,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1898,7 +1898,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2040,7 +2040,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2085,7 +2085,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2376,7 +2376,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u790007537"
+									"varname" : "u234002867"
 								}
 
 							}
@@ -2682,7 +2682,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3220,7 +3220,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3860,7 +3860,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "outputButtonModule.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -4379,12 +4379,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-21::obj-24::obj-31" : [ "umenu[3]", "umenu[9]", 0 ],
+			"obj-21::obj-24::obj-56" : [ "Stereo", "Stereo", 0 ],
+			"obj-21::obj-24::obj-55" : [ "Waveform", "Waveform", 0 ],
 			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
+			"obj-21::obj-18" : [ "live.button[2]", "live.button", 0 ],
+			"obj-21::obj-24::obj-97" : [ "toggle[16]", "toggle", 0 ],
+			"obj-21::obj-15::obj-97" : [ "toggle[1]", "toggle", 0 ],
 			"obj-21::obj-1" : [ "live.button[1]", "live.button", 0 ],
-			"obj-21::obj-24::obj-21::obj-30" : [ "umenu[5]", "umenu[9]", 0 ],
-			"obj-21::obj-24::obj-21::obj-28" : [ "live.button", "live.button", 0 ],
-			"obj-21::obj-24::obj-24" : [ "umenu[4]", "umenu[9]", 0 ]
+			"obj-21::obj-15::obj-61" : [ "live.tab", "live.tab", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -4402,7 +4404,66 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "outputMIDI.maxpat",
+				"name" : "outputSamplePlayer.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "updown.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "up.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "outputModifierChooser.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "outputModNote.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaleChooserBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "singleNoteChooserBpat.maxpat",
+				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "quantisingChooserBpat.maxpat",
 				"bootpath" : "~/Dropbox/Max/Patches/orchestraProj/MAMI/MAMIproject/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

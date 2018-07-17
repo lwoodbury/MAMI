@@ -302,7 +302,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 260.25, 464.0, 77.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.8, 137.300003, 69.0, 20.0 ],
+					"presentation_rect" : [ 2.8, 137.300003, 95.0, 20.0 ],
 					"style" : "",
 					"text" : "#2",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
@@ -323,7 +323,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 275.5, 464.0, 47.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.8, 137.300003, 69.0, 20.0 ],
+					"presentation_rect" : [ 2.8, 137.300003, 95.0, 20.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -396,7 +396,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u604007721"
+					"varname" : "u433001811"
 				}
 
 			}
@@ -1017,7 +1017,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u854007719"
+									"varname" : "u230001812"
 								}
 
 							}
@@ -2912,16 +2912,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-36::obj-21::obj-15::obj-49" : [ "live.button[1]", "live.button", 0 ],
-			"obj-36::obj-21::obj-18" : [ "live.button[2]", "live.button", 0 ],
-			"obj-36::obj-21::obj-15::obj-61" : [ "live.tab", "live.tab", 0 ],
-			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
-			"obj-32" : [ "toggle[1]", "toggle", 0 ],
-			"obj-36::obj-21::obj-15::obj-97" : [ "toggle[3]", "toggle", 0 ],
 			"obj-36::obj-21::obj-24::obj-56" : [ "Stereo", "Stereo", 0 ],
-			"obj-36::obj-21::obj-24::obj-97" : [ "toggle[16]", "toggle", 0 ],
 			"obj-36::obj-21::obj-24::obj-55" : [ "Waveform", "Waveform", 0 ],
-			"obj-36::obj-21::obj-1" : [ "live.button[3]", "live.button", 0 ]
+			"obj-4::obj-32" : [ "toggle[2]", "toggle", 0 ],
+			"obj-36::obj-21::obj-18" : [ "live.button[2]", "live.button", 0 ],
+			"obj-36::obj-21::obj-24::obj-97" : [ "toggle[16]", "toggle", 0 ],
+			"obj-32" : [ "toggle[1]", "toggle", 0 ],
+			"obj-36::obj-21::obj-15::obj-61" : [ "live.tab", "live.tab", 0 ],
+			"obj-36::obj-21::obj-1" : [ "live.button[3]", "live.button", 0 ],
+			"obj-36::obj-21::obj-15::obj-97" : [ "toggle[3]", "toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
