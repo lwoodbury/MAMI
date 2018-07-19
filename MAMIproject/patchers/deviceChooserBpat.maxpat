@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -61,7 +61,8 @@
 					"presentation_rect" : [ 51.300003, 7.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Choose Input Device",
-					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
+					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}

@@ -2613,7 +2613,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u533002795"
+									"varname" : "u809005221"
 								}
 
 							}
@@ -3645,7 +3645,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage",
-					"varname" : "u369002305"
+					"varname" : "u636005218"
 				}
 
 			}
@@ -3662,8 +3662,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 296.125, 36.0, 75.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 1.0, 419.0, 303.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -3807,34 +3805,34 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-25::obj-80" : [ "Response", "Response", 0 ],
+			"obj-2::obj-4" : [ "Waveform", "Waveform", 0 ],
+			"obj-2::obj-129" : [ "CV2", "CV2", 0 ],
+			"obj-38::obj-54" : [ "CV1", "CV1", 0 ],
+			"obj-24::obj-32" : [ "Sustain", "Sustain", 0 ],
+			"obj-38::obj-26" : [ "spectral", "spectral", 0 ],
+			"obj-38::obj-55" : [ "power", "power", 0 ],
+			"obj-2::obj-51" : [ "Freq[1]", "Freq", 0 ],
+			"obj-2::obj-106" : [ "CV3", "CV3", 0 ],
+			"obj-2::obj-36" : [ "PW", "PW", 0 ],
+			"obj-24::obj-1" : [ "Attack", "Attack", 0 ],
 			"obj-38::obj-98" : [ "Gain", "Gain", 0 ],
+			"obj-2::obj-53" : [ "Mute[1]", "Mute", 0 ],
 			"obj-38::obj-95" : [ "Freq", "Freq", 0 ],
 			"obj-2::obj-11" : [ "PWM", "PWM", 0 ],
-			"obj-2::obj-53" : [ "Mute[1]", "Mute", 0 ],
-			"obj-38::obj-55" : [ "power", "power", 0 ],
-			"obj-38::obj-26" : [ "spectral", "spectral", 0 ],
-			"obj-2::obj-46" : [ "Offset", "Offset", 0 ],
-			"obj-24::obj-32" : [ "Sustain", "Sustain", 0 ],
-			"obj-25::obj-55" : [ "Bypass", "Bypass", 0 ],
-			"obj-2::obj-45" : [ "FreqMode", "FreqMode", 0 ],
-			"obj-38::obj-11" : [ "Resonance", "Res", 0 ],
-			"obj-2::obj-51" : [ "Freq[1]", "Freq", 0 ],
-			"obj-25::obj-33" : [ "Quadrants", "Quadrants", 0 ],
-			"obj-24::obj-20" : [ "Mute", "Mute", 0 ],
-			"obj-38::obj-59" : [ "filter_mode", "filter_mode", 0 ],
-			"obj-24::obj-1" : [ "Attack", "Attack", 0 ],
-			"obj-2::obj-107" : [ "Linear", "Linear", 0 ],
-			"obj-25::obj-80" : [ "Response", "Response", 0 ],
-			"obj-2::obj-129" : [ "CV2", "CV2", 0 ],
-			"obj-24::obj-15" : [ "Legato", "Legato", 0 ],
-			"obj-38::obj-63" : [ "CV3[1]", "CV3", 0 ],
 			"obj-24::obj-29" : [ "Decay", "Decay", 0 ],
-			"obj-56" : [ "Stereo", "Stereo", 0 ],
-			"obj-2::obj-106" : [ "CV3", "CV3", 0 ],
-			"obj-38::obj-54" : [ "CV1", "CV1", 0 ],
-			"obj-2::obj-36" : [ "PW", "PW", 0 ],
+			"obj-38::obj-11" : [ "Resonance", "Res", 0 ],
+			"obj-2::obj-46" : [ "Offset", "Offset", 0 ],
+			"obj-25::obj-55" : [ "Bypass", "Bypass", 0 ],
+			"obj-38::obj-63" : [ "CV3[1]", "CV3", 0 ],
+			"obj-2::obj-45" : [ "FreqMode", "FreqMode", 0 ],
+			"obj-24::obj-15" : [ "Legato", "Legato", 0 ],
+			"obj-38::obj-59" : [ "filter_mode", "filter_mode", 0 ],
+			"obj-2::obj-107" : [ "Linear", "Linear", 0 ],
+			"obj-25::obj-33" : [ "Quadrants", "Quadrants", 0 ],
 			"obj-38::obj-51" : [ "CV2[1]", "CV2", 0 ],
-			"obj-2::obj-4" : [ "Waveform", "Waveform", 0 ],
+			"obj-56" : [ "Stereo", "Stereo", 0 ],
+			"obj-24::obj-20" : [ "Mute", "Mute", 0 ],
 			"obj-24::obj-31" : [ "Release", "Release", 0 ]
 		}
 ,

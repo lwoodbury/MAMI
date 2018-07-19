@@ -12,7 +12,7 @@
 		"rect" : [ 642.0, 228.0, 985.0, 762.0 ],
 		"openrect" : [ 0.0, 0.0, 199.0, 0.0 ],
 		"bgcolor" : [ 0.239216, 0.25098, 0.211765, 1.0 ],
-		"bglocked" : 1,
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -1907,8 +1907,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 281.125, 21.0, 75.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.300003, 0.5, 419.0, 303.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -2106,8 +2104,8 @@
  ],
 		"parameters" : 		{
 			"obj-55" : [ "Waveform", "Waveform", 0 ],
-			"obj-56" : [ "Stereo", "Stereo", 0 ],
-			"obj-97" : [ "toggle[16]", "toggle", 0 ]
+			"obj-97" : [ "toggle[16]", "toggle", 0 ],
+			"obj-56" : [ "Stereo", "Stereo", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
